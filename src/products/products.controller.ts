@@ -21,6 +21,7 @@ export class ProductsController {
   findAll(@Payload() paginationDto: PaginationDto) {
     return this.productsService.findAll(paginationDto);
   }
+  //HOLA
 
   // @Get(":id")
   @MessagePattern({ cmd: 'find_one_product' })
